@@ -1,0 +1,11 @@
+{
+  "name": "main-pro",
+  "version": "1.0.0",
+  "description": "Meal Queue is an aide to help individuals come up with dinner ideas. \r Type in a food item and a list of different recipes is presented with an \r option to view a video tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aastha",
+  "license": "ISC"
+}

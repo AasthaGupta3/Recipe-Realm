@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="image" property="og:image" content="https://i.imgur.com/GqJx4aH.gif"/>
+    <link rel="stylesheet" href="./assets/css/style.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Recipe Realm</title>
+</head>
+<body>
+    <header class="intro" id="home">
+        <div class="intro-page">
+            <div class="intro-left">
+                <h1>
+                    Recipe Realm
+                </h1>
+                <p>
+                    
+                    Welcome to the Recipe Realm, where culinary inspiration meets your cravings! Get ready to embark on a tantalizing journey through our recipe wonderland, where every dish is a delicious adventure waiting to be discovered. Let's dive into the realm of gastronomic delight together
+                    </span> 
+                    Enter a meal idea and get the recipes to cook something creative and different!
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+        <a href="#recipe-function"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </header> 
+
+    <!-- Side menu start -->
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+        <div class="list">
+            <a class="link-menu" href="home.html"><div class="item">Home</div></a>
+            <a class="link-menu" href="about.html"><div class="item">About us</div></a>
+            <a class="link-menu" href="contact.html"><div class="item">contact us</div></a>
+            <a class="link-menu" href="#recipe-function"><div class="item">Get Recipe</div></a>
+        </div>
+        <!-- Search History box inside of side menu -->
+        <div class="search-history" id="search-history">
+            <h3>Look up your search history!</h3>
+            <span id="history-box">
+
+            </span>
+            <button class="btn" type="button" id="clear-history">Clear History</button>
+        </div>
+      </div>
+
+    <!-- Main function -->
+    <div class="operation-page" id="recipe-function">
+        <div class="operation-box">
+            <!-- Contains text -->
+            <div class="mainform-text">
+                <div class="form-title">
+                    <h1 class="m">
+                        RECIPE
+                    </h1>
+                    <h1 class="q"><span>R</span>EALM</h1>
+                </div>
+                <div class="how-to-use">
+                    <h2 class="how-to">
+                        How to use
+                    </h2>
+                    <ol>
+                        <li>Enter Recipe Name.</li>
+                        <li>Click "FIND" button.</li>
+                        <li> Click any card to see ingredients and video clip</li>
+
+                    </ol>
+                </div>
+            </div>
+            <!-- Recipe name search Input -->
+            <div class="recipe-name" id="recipe-name">
+                <h3>
+                    Enter Recipe Name
+                </h3>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter to search" onclick="this.value=''" autocomplete="off" id="name-input" required/>
+                    <button class="result-btn" id="result-btn">FIND!</button>
+                </div>
+            </div>
+
+            <!-- Recipe card comes in from JS -->
+            <span class="recipe-card-holder" id="recipe-card-holder">
+            </span>
+        </div>   
+    </div>
+    
+    <!-- footer -->
+    
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
